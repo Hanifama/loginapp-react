@@ -1,0 +1,93 @@
+.layanan{
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+.layanan h2{
+	color: var(--dark-blue);
+	font-size: 5rem;
+	font-family: sans-serif;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.layanan .card{
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	height: 440px;
+	box-shadow: inset 5px 5px 5px blanchedalmond, 
+				inset -5px -5px 5px blanchedalmond,
+				inset 5px 5px 5px bisque,
+				inset -5px -5px 5px wheat;
+	border-radius: 15px;
+	margin: 10px;
+}
+.layanan .card .box{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: var(--dark-blue);
+	box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.01);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.layanan .card:hover .box{
+	transform: translateY(-50px);
+	box-shadow: 0 10px 40px rgba($color: #000000, $alpha: 0.02);
+	background: linear-gradient(45deg, var(--dark-blue),var(--color-orange));
+}
+.layanan .card .box .content{
+	padding: 20px;
+	text-align: center;
+}
+.layanan .card .box .content h2{
+	position: absolute;
+	top: -10px;
+	right: 30px;
+	font-size: 8em;
+	color: rgba($color: #000000, $alpha: 0.02);
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+.layanan .card:hover .box .content h2{
+	color: rgba($color: #000000, $alpha: 0.05);
+}
+
+.layanan .card .box .content h3{
+	font-size: 1.8em;
+	color: #777;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+
+.layanan .card:hover .box .content h3,
+.layanan .card:hover .box .content p{
+	color: var(--color-white);
+}
+
+
+.layanan .card .box .content p{
+	margin-top: 1rem;
+	font-size: 1em;
+	font-weight: 300;
+	color: #777;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+
+
+
+
+
+

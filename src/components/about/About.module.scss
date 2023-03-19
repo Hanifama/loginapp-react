@@ -1,0 +1,85 @@
+
+.line-with-text {
+display: flex;
+align-items: center;
+}
+
+ .line {
+ flex: 1; /* takes up remaining space between the text */
+ border-top: 5px solid blue; /* change the color as needed */
+ border-radius: 15px;
+ margin-top: 18px;
+ margin-right: 1rem; /* adjust the margin as needed */
+ }
+
+ .line-text {
+ font-size: 18px; /* adjust the font size as needed */
+ }
+
+ .right-text {
+ margin-top: 18px;
+ margin-left: auto; /* pushes the text to the right side */
+ margin-right: 25%;
+ }
+
+ /* CSS styles go here */
+
+ .about {
+   background-color: var(--color-white);
+   padding: 50px 0;
+ }
+ .about h1{
+     text-align: center;
+     font-size: 2rem;
+ }
+  hr{
+     color: aqua;
+     
+ }
+ .content {
+   max-width: 1200px;
+   margin: 0 10%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+ .abouttext {
+   flex: 1;
+   text-align: left;
+   font-size: 10px;
+   font-weight: 200;
+   margin-bottom: 10rem;
+ }
+ .abouttext h2 {
+   font-size: 36px;
+   margin-bottom: 25px;
+ }
+ .abouttext p {
+    color: #000;
+   font-size: 1.5rem;
+   line-height: 1.5;
+   margin-bottom: 1rem;
+ }
+ .aboutimage {
+    margin-left: 0;
+   padding: 50px 20px;
+   flex: 1;
+   text-align: center;
+ }
+ .aboutimage img {
+     margin-top: 0;
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: 15px;
+ }
+ .about span p{
+    color: #000;
+ }
+ /* Responsive styles */
+ @media (max-width: 991px) {
+   .about-text, .about-image {
+     flex: 1 0 100%;
+     padding: 0 25px;
+     text-align: center;
+   }
+ }
